@@ -1,4 +1,3 @@
-// __tests__/Home.test.tsx
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import fetchMock from 'jest-fetch-mock';
 import Home from '../app/page';
@@ -27,7 +26,7 @@ describe('Home Page - User Interactions', () => {
 
     const mockResults = {
       success: true,
-      results: [{ fileName: 'test.png', brand: 'TestBrand', model: 'TestModel', description: 'A test item', condition: 'New', currentRetailPrice: '00', webLink: '#', correspondingItemPictures: '#', confidence: '0.95' }],
+      results: [{ fileName: 'test.png', brand: 'TestBrand', model: 'TestModel', description: 'A test item', condition: 'New', currentRetailPrice: '$100', webLink: '#', correspondingItemPictures: '#', confidence: '0.95' }],
     };
     fetchMock.mockResponseOnce(JSON.stringify(mockResults));
 

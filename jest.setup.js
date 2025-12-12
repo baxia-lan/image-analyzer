@@ -34,3 +34,8 @@ if (typeof Response.json === 'undefined') {
   };
 }
 
+// Global mock for heic2any
+jest.mock('heic2any', () => ({
+  __esModule: true,
+  default: jest.fn().mockImplementation(options => Promise.resolve(options.blob)),
+}));

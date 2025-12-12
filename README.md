@@ -40,16 +40,6 @@ You need Node.js and npm installed. The recommended way to install and manage No
     export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" && nvm install node
     ```
 
-### System Dependencies (for HEIC Conversion)
-
-For server-side HEIC/HEIF conversion using the `sharp` library, you need to install `libvips`.
-
-```bash
-sudo apt-get update
-sudo apt-get install -y libvips-dev
-```
-**Important:** Remember to consider enabling sandboxing for `sudo` commands, as they make system-level changes.
-
 ### Google Cloud Vision AI Setup
 
 This application relies on the Google Cloud Vision API for initial image analysis. You need to set up a Google Cloud Project and configure authentication.
